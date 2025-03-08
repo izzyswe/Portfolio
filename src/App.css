@@ -1,0 +1,156 @@
+/*Mobile View*/
+@media (max-width: 768px) {
+  .logo {
+    width: 60px;
+  }
+}
+
+/*Header Component*/
+/* logo */
+.logo {
+  /*height: 6em;*/
+  width: 80px;
+  /*padding: 1.5em;*/
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*navbar*/
+.navBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  height: 50px;
+  gap: 30px;
+  font-weight: 800;
+  font-size: 20px;
+}
+header{
+  font-family: 'Dangrek', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 85px;
+  color: #95c1e6;
+  gap: 60%;
+}
+header img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+header a{
+  color: #95c1e6;
+  font-size: 1.6rem;
+  height: 80%;
+  text-decoration: none;
+  padding: 20px;
+  /*border-radius: 18px;*/
+}
+ header a:hover{
+  color: #95c1e6;
+  text-decoration: none;
+  background-color: #dfe7ed;
+  border-radius: 52px;
+  padding: 18px;
+  transition: 0.5s;
+}
+
+body{
+  background-color: #070b17;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.hero{
+  display: flex;
+  background-image: url('./assets/background.JPEG');
+  background-size: cover;
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+  /*https://www.cssportal.com/css-clip-path-generator/#google_vignette*/
+  clip-path: polygon(50% 100%, 100% 73%, 100% 0, 0 0, 0 73%);
+}
+
+.hero div{
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.hero h1{
+  position: absolute;
+  top: 40%;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.aboutme{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+aboutme h1{
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.contentMe{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
