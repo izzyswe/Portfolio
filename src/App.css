@@ -4,7 +4,13 @@
     width: 60px;
   }
 }
-
+div{
+  background-color: #070b17;
+  font-family: 'Dangrek', cursive;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
 /*Header Component*/
 /* logo */
 .logo {
@@ -113,6 +119,77 @@ body{
   top: 40%;
   font-size: 3em;
   font-weight: 800;
+}
+
+/*reference: https://codepen.io/ephs23/embed/NeQZGx?height=500&theme-id=dark&default-tab=result&slug-hash=NeQZGx&pen-title=Social%20Media%20Icons%20hover%20effect&preview=false&editable=true&user=ephs23&name=cp_embed_16#result-box*/
+.hero-socials{
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-socials li{
+  list-style: none;
+  margin: 0 10px;
+}
+
+.hero-socials li a{
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.hero-socials li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.hero-socials li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.hero-socials li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.hero-socials li a:hover:before {
+  top: 0;
+}
+
+.hero-socials li:nth-child(1) a:before{
+  background-color: black;
+}
+
+.hero-socials li:nth-child(2) a:before {
+  background-color: #0077b5;
+}
+
+.hero-socials li:nth-child(3) a:before {
+  background: linear-gradient(126deg, rgba(245,133,41,1) 0%, rgba(131,58,180,1) 51%, rgba(253,29,29,1) 95%);
 }
 
 main{

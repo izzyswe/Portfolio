@@ -1,31 +1,24 @@
 import "../App.css";
 
 export default function Hero() {
-  const background = document.querySelector('.hero')
-
-  document.addEventListener('scroll', (e) => {
-    const scroll = window.scrollY
-    background.style.backgroundPosition = `0px ${scroll/2}px`;
-  })
   return (
     <section className="hero">
       <div>
         <h1 className="hero-title">Hello, World!</h1>
+        <ul className="hero-socials">
+          <li>
+            <a href="https://github.com/izzyswe"><i className="fab fa-github icon"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/9-isaac-kim/"><i className="fab fa-linkedin icon"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/izzyswe/"><i className="fab fa-instagram icon"></i></a>
+          </li>
+        </ul>
         <p className="hero-subtitle">
             Welcome to my portfolio. I'm a software engineer who loves to code.
         </p>
-        <ul className="hero-socials">
-          <li>
-            <a href=""><i className="fab fa-github">gt</i></a>
-          </li>
-          <li>
-            <a href=""><i className="fab fa-linkedin">LIN</i></a>
-          </li>
-          <li>
-            <a href=""><i className="fab fa-instagram">IN</i></a>
-          </li>
-
-        </ul>
       </div>
     </section>
   )
