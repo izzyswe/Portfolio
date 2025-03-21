@@ -4,230 +4,374 @@
     width: 60px;
   }
 }
-div{
-  background-color: #070b17;
-  font-family: 'Dangrek', cursive;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-/*Header Component*/
-/* logo */
-.logo {
-  /*height: 6em;*/
-  width: 80px;
-  /*padding: 1.5em;*/
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1080px) {
+  html {
+    scroll-behavior: smooth;
   }
-  to {
-    transform: rotate(360deg);
+  div {
+    background-color: #232324;
+    font-family: "Dangrek", cursive;
+    /*color: #ffffff;*/
+    color: #95c1e6;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*Header Component*/
+  /* logo */
+  .logo {
+    /*height: 6em;*/
+    width: 80px;
+    /*padding: 1.5em;*/
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /*navbar*/
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: flex-end;*/
+    list-style: none;
+    height: 80px;
+    gap: 30px;
+    font-weight: 800;
+    font-size: 20px; 
+  }
+  header {
+    font-family: "Dangrek", cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 95px;
+    width: 640px;
+    color: #95c1e6;
+    gap: 10%;
+    position: fixed;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 30px 0px;
+  }
+  header a img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  header nav > ul{
+    margin-top: 10px;
+  }
+
+  header nav > ul > li > a {
+    color: #95c1e6;
+    font-size: 1.6rem;
+    height: 80%;
+    width: 180px;
+    text-decoration: none;
+    border-radius: 18px;
+  }
+  header nav > ul > li > a:hover {
+    color: #95c1e6;
+    text-decoration: none;
+    background-color: #dfe7ed;
+    border-radius: 32px;
+    padding: 10px;
+    transition: 0.5s;
+  }
+
+  body {
+    /*background-color: #070b17;*/
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    display: flex;
+    background-image: url("./assets/background.JPEG");
+    background-size: cover;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+    /*https://www.cssportal.com/css-clip-path-generator/#google_vignette*/
+    clip-path: polygon(50% 100%, 100% 73%, 100% 0, 0 0, 0 73%);
+  }
+
+  .hero div {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero > div > .hero-title{
+    background: linear-gradient(22deg, rgba(198,196,196,1) 4%, rgba(226,221,221,1) 27%, rgba(175,174,174,1) 69%, rgba(198,196,196,1) 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero h1 {
+    position: absolute;
+    top: 28%;
+    font-size: 15em;
+    font-weight: 800;
+  }
+
+  /*reference: https://codepen.io/ephs23/embed/NeQZGx?height=500&theme-id=dark&default-tab=result&slug-hash=NeQZGx&pen-title=Social%20Media%20Icons%20hover%20effect&preview=false&editable=true&user=ephs23&name=cp_embed_16#result-box*/
+  .hero-socials {
+    display: flex;
+    position: absolute;
+    top: 66%;
+    left: 49%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-socials li {
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+  }
+
+  .hero-socials li a {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+
+  .hero-socials li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+  }
+
+  .hero-socials li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+
+  .hero-socials li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  .hero-socials li a:hover:before {
+    top: 0;
+  }
+
+  .hero-socials li:nth-child(1) a:before {
+    background-color: black;
+  }
+
+  .hero-socials li:nth-child(2) a:before {
+    background-color: #0077b5;
+  }
+
+  .hero-socials li:nth-child(3) a:before {
+    background: linear-gradient(
+      126deg,
+      rgba(245, 133, 41, 1) 0%,
+      rgba(131, 58, 180, 1) 51%,
+      rgba(253, 29, 29, 1) 95%
+    );
+  }
+
+  /*main{*/
+  /*  display: flex;*/
+  /*  flex-direction: column;*/
+  /*  align-items: center;*/
+  /*  justify-content: center;*/
+  /*  height: 100vh;*/
+  /*  gap: 20px;*/
+  /*}*/
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 20px;
+    margin-top: 2%;
+  }
+  .aboutMe h2 {
+    font-size: 4em;
+    font-weight: 800;
+  }
+
+  .aboutMe p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 88%;
+    font-size: 1.5rem;
+  }
+
+  .aboutMe > div {
+    display: flex;
+    gap: 120px;
+  }
+
+  .aboutMe > div > img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .aboutMePhoto {
+    border-radius: 50%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 10px;
+    margin-top: 8%;
+  }
+  .projects h2{
+    font-size: 4em;
+    font-weight: 800;
+  }
+
+  .card{
+    border-width: 20px;
+    border-radius: 20px;
+  }
+
+  /*Project Section*/
+  .ProjectDescription{
+    display: flex;
+    align-items: center;
+    flex-direction: flex-start;
+    margin-top: 8%;
+    /*gap: 400px; this would put space vertically*/
+  }
+  .ProjectDescription div p{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  .ProjectDescription div h2{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 4rem;
+  }
+  .ProjectDescription img{
+    display: flex;
+    width: 800px;
+  }
+  .ProjectDescription > div > div{
+    margin-top: 10px; /* Add space between paragraph and links */
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .ProjectDescription div > div a{
+    background-color: #0b121a;
+    width: 150px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .ProjectDescription div > div a:hover{
+    background-color: #5393e0;
+  }
+  .ProjectDescription div > div .back{
+    background-color: #99030b;
+    color: black;
+  }
+  .ProjectDescription div > div .back:hover{
+    background-color: #400407;
+    color: white;
+  }
+  
+  /*Contact Me Page*/
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 80px;
+    margin-top: 2%;
+  }
+  .contactMe h2{
+    font-size: 5em;
+    font-weight: 800;
+  }
+  .contactMe div a{
+    background-color: #0b121a;
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .contactMe div a:hover{
+    background-color: #5393e0;
+  }
+  .contactMe h4{
+    font-size: 5em;
+  }
+  .contactMe div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+  }
+  .contactMe div + div{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
   }
 }
-
-/*navbar*/
-.navBar{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  list-style: none;
-  height: 50px;
-  gap: 30px;
-  font-weight: 800;
-  font-size: 20px;
-}
-header{
-  font-family: 'Dangrek', cursive;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 85px;
-  color: #95c1e6;
-  gap: 60%;
-}
-header img{
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-left: 20px;
-}
-
-header a{
-  color: #95c1e6;
-  font-size: 1.6rem;
-  height: 80%;
-  text-decoration: none;
-  padding: 20px;
-  /*border-radius: 18px;*/
-}
- header a:hover{
-  color: #95c1e6;
-  text-decoration: none;
-  background-color: #dfe7ed;
-  border-radius: 52px;
-  padding: 18px;
-  transition: 0.5s;
-}
-
-body{
-  background-color: #070b17;
-  font-family: 'Roboto', sans-serif;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-
-.hero{
-  display: flex;
-  background-image: url('./assets/background.JPEG');
-  background-size: cover;
-  background-position: center;
-  /*background-repeat: no-repeat;*/
-  background-attachment: fixed; 
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 92vh;
-  /*https://www.cssportal.com/css-clip-path-generator/#google_vignette*/
-  clip-path: polygon(50% 100%, 100% 73%, 100% 0, 0 0, 0 73%);
-}
-
-.hero div{
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  height: 100%;
-}
-
-.hero h1{
-  position: absolute;
-  top: 40%;
-  font-size: 3em;
-  font-weight: 800;
-}
-
-/*reference: https://codepen.io/ephs23/embed/NeQZGx?height=500&theme-id=dark&default-tab=result&slug-hash=NeQZGx&pen-title=Social%20Media%20Icons%20hover%20effect&preview=false&editable=true&user=ephs23&name=cp_embed_16#result-box*/
-.hero-socials{
-  display: flex;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hero-socials li{
-  list-style: none;
-  margin: 0 10px;
-}
-
-.hero-socials li a{
-  width: 60px;
-  height: 60px;
-  background-color: #fff;
-  text-align: center;
-  line-height: 60px;
-  font-size: 35px;
-  margin: 0 10px;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  border: 3px solid #fff;
-  z-index: 1;
-}
-
-.hero-socials li a .icon {
-  position: relative;
-  color: #262626;
-  transition: .5s;
-  z-index: 3;
-}
-
-.hero-socials li a:hover .icon {
-  color: #fff;
-  transform: rotateY(360deg);
-}
-
-.hero-socials li a:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: .5s;
-  z-index: 2;
-}
-
-.hero-socials li a:hover:before {
-  top: 0;
-}
-
-.hero-socials li:nth-child(1) a:before{
-  background-color: black;
-}
-
-.hero-socials li:nth-child(2) a:before {
-  background-color: #0077b5;
-}
-
-.hero-socials li:nth-child(3) a:before {
-  background: linear-gradient(126deg, rgba(245,133,41,1) 0%, rgba(131,58,180,1) 51%, rgba(253,29,29,1) 95%);
-}
-
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  gap: 20px;
-}
-
-.aboutme{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  gap: 20px;
-}
-aboutme h1{
-  font-size: 2em;
-  font-weight: 800;
-}
-
-.projects{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  gap: 20px;
-}
-
-.contentMe{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-

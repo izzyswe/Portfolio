@@ -1,4 +1,4 @@
-import "../App.css";
+import "../App.css"
 
 export default function Hero() {
   return (
@@ -16,9 +16,9 @@ export default function Hero() {
             <a href="https://www.instagram.com/izzyswe/"><i className="fab fa-instagram icon"></i></a>
           </li>
         </ul>
-        <p className="hero-subtitle">
-            Welcome to my portfolio. I'm a software engineer who loves to code.
-        </p>
+        {/*<p className="hero-subtitle">
+           Welcome to my portfolio. I'm a software engineer who loves to code.
+        </p>*/}
       </div>
     </section>
   )
