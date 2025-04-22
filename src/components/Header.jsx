@@ -34,9 +34,9 @@ export default function Header(){
 
       <nav className={menuOpen ? "mobile-nav open" : "mobile-nav"}>
         <ul className={`navBar ${menuOpen ? "show" : "hide"}`}>
-          <li><a href="#aboutMe">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contactMe">Contact Me</a></li>
+          <li><a href="#aboutMe" onClick={() => setMenuOpen(!menuOpen)}>About Me</a></li>
+          <li><a href="#projects" onClick={() => setMenuOpen(!menuOpen)}>Projects</a></li>
+          <li><a href="#contactMe" onClick={() => setMenuOpen(!menuOpen)}>Contact Me</a></li>
         </ul>
       </nav>
     </header>
