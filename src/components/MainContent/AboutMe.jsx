@@ -18,9 +18,9 @@ export default function AboutMe() {
         <h2> Who Am I?</h2>
         <img className="aboutMePhoto" src= {profilePic}/>
         <p>
-          I am a software developer with a passion for creating and building
+          Hi, I'm Isaac, I am a software developer with a passion for creating and building
           things. I have experience with Vanilla JavaScript, React.js, Spring Boot, and
-          Java. I am always looking to learn new things and expand my
+          Java as well as a few other seen below. I am always looking to learn new things and expand my
           knowledge. I am a quick learner and a team player. I am always
           looking to improve and grow as a developer. I am looking for a
           position where I can grow and learn new things. I am excited to see

@@ -12,7 +12,7 @@ export default function Neovim(){
 
   return(
   <div className="ProjectDescription">
-        <img src={NeovimSS} alt="Lotte Project Screenshot" />
+        <img src={NeovimSS} alt="Neovim Configuration Project Screenshot" />
         <div>
           <h2>Neovim Replica Project</h2>
           <p>
@@ -35,7 +35,7 @@ export default function Neovim(){
             you set it up but it certainly makes you think differently after using this editor.
           </p>
         <div>
-          <a href="https://izzyswe.github.io/Rayban-Project/">Go to Live Site</a>
+          <a href="https://github.com/izzyswe/Neovim">Go to Github</a>
           <a className="back" href="#" onClick={(event) => event.preventDefault()}>
             <span onClick={() => setGoBack("Home")}>Go Back</span>
           </a>

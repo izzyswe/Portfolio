@@ -1,5 +1,5 @@
 import "../../App.css"
-import RaybanSS from "../../assets/projects/raybanSS.png"
+import RaybanSS from "../../assets/projects/TodoSS.png"
 import Projects from "../MainContent/Projects.jsx"
 import { useState } from "react"
 
@@ -12,7 +12,7 @@ export default function Todo(){
 
   return(
   <div className="ProjectDescription">
-        <img src={RaybanSS} alt="Lotte Project Screenshot" />
+        <img src={RaybanSS} alt="Todo Project Screenshot" />
         <div>
           <h2>Todo List Project</h2>
           <p>
@@ -26,7 +26,7 @@ export default function Todo(){
             But i am getting a ahead of myself
           </p>
         <div>
-          <a href="https://izzyswe.github.io/Rayban-Project/">Go to Live Site</a>
+          <a href="https://github.com/izzyswe/Todo-React">Go to Github</a>
           <a className="back" href="#" onClick={(event) => event.preventDefault()}>
             <span onClick={() => setGoBack("Home")}>Go Back</span>
           </a>

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="hero">
       <div>
-        <h1 className="hero-title">Hello, World!</h1>
+        <h1 className="hero-title cursor typewriter-animation">Hello, World!</h1>
         <ul className="hero-socials">
           <li>
             <a href="https://github.com/izzyswe"><i className="fab fa-github icon"></i></a>

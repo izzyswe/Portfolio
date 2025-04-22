@@ -57,21 +57,21 @@ export default function Projects() {
         <div>
           <CardGroup className="gap-3 mb-3" style={{height: "22rem"}}>
           <Card style={{ width: '24rem' }}>
-            <Card.Img variant="top" src={TodoList} style={{width: "382.5px"}} />
+            <Card.Img variant="top" src={TodoList} className="CardImg" />
             <Card.Body>
               <Card.Title style={{ color: "white"}}>Todo List </Card.Title>
               <Button variant="primary" onClick={() => setSelectedProject("TodoProject")}>Go To Project</Button>
             </Card.Body>
           </Card>
           <Card style={{ width: '24rem' }}>
-            <Card.Img variant="top" src={Neovim} style={{width: "382.5px"}} />
+            <Card.Img variant="top" src={Neovim} className="CardImg" />
             <Card.Body>
               <Card.Title style={{ color: "white"}}>NeoVim Configuration</Card.Title>
               <Button variant="primary" onClick={() => setSelectedProject("NeovimProject")}>Go To Project</Button>
             </Card.Body>
           </Card>
           <Card style={{ width: '24rem' }}>
-            <Card.Img variant="top" src={LottePhoto} style={{width: "382.5px"}} />
+            <Card.Img variant="top" src={LottePhoto} className="CardImg" />
             <Card.Body>
               <Card.Title style={{color:"white"}}>Lotte Replica</Card.Title>
               <Button variant="primary" onClick={() => setSelectedProject("LotteProject")}>Go To Project</Button>
@@ -80,21 +80,21 @@ export default function Projects() {
           </CardGroup>
           <CardGroup className="gap-3 mb-3">
             <Card style={{ width: '24rem' }}>
-            <Card.Img variant="top" src={WhysApp} style={{width: "382.5px"}} />
+            <Card.Img variant="top" src={WhysApp} className="CardImg" />
             <Card.Body>
               <Card.Title style={{color:"white"}}>WhysApp</Card.Title>
               <Button variant="primary" onClick={() => setSelectedProject("WhysAppProject")}>Go To Project</Button>
             </Card.Body>
           </Card>
           <Card style={{ width: '24rem' }}>
-            <Card.Img variant="top" src={PyleOrganizer} style={{width: "382.5px"}} />
+            <Card.Img variant="top" src={PyleOrganizer} className="CardImg" />
             <Card.Body>
               <Card.Title style={{color:"white"}}>Pyle Organizer</Card.Title>
               <Button variant="primary" onClick={() => setSelectedProject("PyleOrganizerProject")}>Go To Project</Button>
             </Card.Body>
           </Card>
           <Card style={{ width: '24rem' }}>
-            <Card.Img variant="top" src={Rayban} style={{width: "382.5px"}} />
+            <Card.Img variant="top" src={Rayban} className="CardImg" />
             <Card.Body>
               <Card.Title style={{color:"white"}}>Rayban Replica</Card.Title>
                 {/*<Card.Text style={{ color: "white"}}>

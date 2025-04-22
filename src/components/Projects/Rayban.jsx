@@ -12,7 +12,7 @@ export default function Rayban(){
 
   return(
   <div className="ProjectDescription">
-        <img src={RaybanSS} alt="Lotte Project Screenshot" />
+        <img src={RaybanSS} alt="Rayban Project Screenshot" />
         <div>
           <h2>Rayban Replica Project</h2>
           <p>
