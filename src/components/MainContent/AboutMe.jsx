@@ -10,6 +10,8 @@ import VanillaLogo from "../../assets/plang/js.svg"
 import LuaLogo from "../../assets/plang/lua.svg"
 import PythonLogo from "../../assets/plang/python.svg"
 import ReactLogo from "../../assets/plang/react.svg"
+import SpringBoot from "../../assets/plang/springboot.svg"
+import MySQL from "../../assets/plang/mySQL.webp"
 
 export default function AboutMe() {
   return (
@@ -19,12 +21,13 @@ export default function AboutMe() {
         <img className="aboutMePhoto" src= {profilePic}/>
         <p>
           Hi, I'm Isaac, I am a software developer with a passion for creating and building
-          things. I have experience with Vanilla JavaScript, React.js, Spring Boot, and
-          Java as well as a few other seen below. I am always looking to learn new things and expand my
-          knowledge. I am a quick learner and a team player. I am always
-          looking to improve and grow as a developer. I am looking for a
-          position where I can grow and learn new things. I am excited to see
-          what the future holds for me as a developer.
+          things. I have 5+ experience with building and optimizing Desktop and Mobile application. 
+          I am always looking to learn new things and expand my
+          knowledge. An extremely fast adapter and learner to new technologies, 
+          being that some of these languages below are languages self-taught within 2 weeks (or this website built on Reactjs with only 20 hours of learning).
+          I excel at debugging, troubleshooting and general problem solving. 
+          Mentored many students and collaborate with other open source developers.
+          I'm always committed to ensuring the highest quality in my work and effort with the most efficiency.
           </p>
         <div>
           <img src={CsharpLogo} alt="CSharp Logo" />
@@ -33,6 +36,8 @@ export default function AboutMe() {
           <img src={LuaLogo} alt="Lua Logo" />
           <img src={PythonLogo} alt="Python Logo" />
           <img src={ReactLogo} alt="React Logo" />
+          <img src={SpringBoot} alt="Spring Boot"/>
+          <img src={MySQL} alt="mySQL" />
         </div>
       </div>
     </section>
